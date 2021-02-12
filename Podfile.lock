@@ -1,0 +1,26 @@
+PODS:
+  - QuickLayout (3.0.0)
+  - SDWebImage (5.10.3):
+    - SDWebImage/Core (= 5.10.3)
+  - SDWebImage/Core (5.10.3)
+  - SwiftEntryKit (1.2.7):
+    - QuickLayout (= 3.0.0)
+
+DEPENDENCIES:
+  - SDWebImage (~> 5.0)
+  - SwiftEntryKit (= 1.2.7)
+
+SPEC REPOS:
+  trunk:
+    - QuickLayout
+    - SDWebImage
+    - SwiftEntryKit
+
+SPEC CHECKSUMS:
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  SDWebImage: e378178472b735e84b007bfb55514c97948a0598
+  SwiftEntryKit: 537c92699d6034efb1ef9c32b11e0b37c97aa589
+
+PODFILE CHECKSUM: 50ae647c5bd2f9b37f495cd0b3257f08ef8eb88d
+
+COCOAPODS: 1.9.3
