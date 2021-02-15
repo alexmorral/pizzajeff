@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3D7B1FE62D241FCE6C16977E /* Pods_PizzaJeff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80E47F12D3D476D829C051B /* Pods_PizzaJeff.framework */; };
+		8B18922125DABD2700B1C61D /* UpsellPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18922025DABD2700B1C61D /* UpsellPopupViewController.swift */; };
+		8B18922B25DAC65100B1C61D /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18922A25DAC65100B1C61D /* ActionButton.swift */; };
+		8B18922E25DACC3900B1C61D /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18922D25DACC3900B1C61D /* TypeAlias.swift */; };
 		8B7B644025D68E4B00A442F4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B643F25D68E4B00A442F4 /* MainCoordinator.swift */; };
 		8B7B644825D68EF900A442F4 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B644725D68EF900A442F4 /* UIViewController+Extensions.swift */; };
 		8B7B644C25D68FCF00A442F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7B644B25D68FCF00A442F4 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* Begin PBXFileReference section */
 		28D401E6420A8B40B14A5E2E /* Pods-PizzaJeff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaJeff.release.xcconfig"; path = "Target Support Files/Pods-PizzaJeff/Pods-PizzaJeff.release.xcconfig"; sourceTree = "<group>"; };
 		50B44279E54F4A1A8E0D7B2F /* Pods-PizzaJeff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaJeff.debug.xcconfig"; path = "Target Support Files/Pods-PizzaJeff/Pods-PizzaJeff.debug.xcconfig"; sourceTree = "<group>"; };
+		8B18922025DABD2700B1C61D /* UpsellPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpsellPopupViewController.swift; sourceTree = "<group>"; };
+		8B18922A25DAC65100B1C61D /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		8B18922D25DACC3900B1C61D /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		8B7B643F25D68E4B00A442F4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		8B7B644725D68EF900A442F4 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		8B7B644B25D68FCF00A442F4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B18923025DAD1BD00B1C61D /* Library Components */ = {
+			isa = PBXGroup;
+			children = (
+				8B18922025DABD2700B1C61D /* UpsellPopupViewController.swift */,
+				8B18922A25DAC65100B1C61D /* ActionButton.swift */,
+			);
+			path = "Library Components";
+			sourceTree = "<group>";
+		};
 		8B7B644225D68EAE00A442F4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +124,7 @@
 				8B7B645625D695B200A442F4 /* Alerts.swift */,
 				8B7B646C25D69C1800A442F4 /* PizzaList.json */,
 				8B7B647525D6B06900A442F4 /* HardCodedOrdering.swift */,
+				8B18922D25DACC3900B1C61D /* TypeAlias.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -118,6 +134,7 @@
 			children = (
 				8B7B645A25D6988000A442F4 /* PizzaListCollectionViewCell.swift */,
 				8B7B647E25D7322800A442F4 /* OrderTableViewCell.swift */,
+				8B18923025DAD1BD00B1C61D /* Library Components */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -318,6 +335,8 @@
 				8B7B646025D6993300A442F4 /* Pizza.swift in Sources */,
 				8B7B648525D733B800A442F4 /* OrderManager.swift in Sources */,
 				8B7B648225D7330100A442F4 /* Order.swift in Sources */,
+				8B18922125DABD2700B1C61D /* UpsellPopupViewController.swift in Sources */,
+				8B18922E25DACC3900B1C61D /* TypeAlias.swift in Sources */,
 				8BED0C0425D14B720078A7CB /* LoginViewController.swift in Sources */,
 				8B7B647925D6B3EE00A442F4 /* PizzaDetailViewController.swift in Sources */,
 				8B7B645025D6918F00A442F4 /* Enums.swift in Sources */,
@@ -328,6 +347,7 @@
 				8BED0C0025D14B720078A7CB /* AppDelegate.swift in Sources */,
 				8B7B647025D6AA0000A442F4 /* Double+Extensions.swift in Sources */,
 				8B7B645B25D6988000A442F4 /* PizzaListCollectionViewCell.swift in Sources */,
+				8B18922B25DAC65100B1C61D /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

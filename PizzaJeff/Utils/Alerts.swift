@@ -41,4 +41,21 @@ class Alerts {
         let contentView = EKNotificationMessageView(with: notificationMessage)
         SwiftEntryKit.display(entry: contentView, using: attributes)
     }
+    
+    static func showMovieUpsell(in vc: UIViewController, leftAction: @escaping ClosureAction, rightAction: @escaping ClosureAction) {
+        let popupConfiguration = UpsellPopupConfiguration(title: "Watch a movie while eating your pizza",
+                                                          description: "We know people like to watch a movie while eating their pizzas. That's why we are offering at discounted price a movie.",
+                                                          leftButtonText: "No thanks",
+                                                          rightButtonText: "Add to cart")
+        showUpsellPopup(in: vc,
+                        configuration: popupConfiguration,
+                        leftAction: leftAction, rightAction: rightAction)
+    }
+    
+    static func showUpsellPopup(in vc: UIViewController, configuration: UpsellPopupConfiguration, leftAction: @escaping ClosureAction, rightAction: @escaping ClosureAction) {
+        let upsellPopup = UpsellPopupViewController()
+        upsellPopup.modalPresentationStyle = .overCurrentContext
+        upsellPopup.configure(configuration: configuration, leftButtonAction: leftAction, rightButtonAction: rightAction)
+        vc.present(upsellPopup, animated: true, completion: nil)
+    }
 }

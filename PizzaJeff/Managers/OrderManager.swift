@@ -21,6 +21,7 @@ class OrderManager {
     }
     
     func purchaseAllOrders() {
+        print("Orders have been submited")
         resetOrders()
     }
     

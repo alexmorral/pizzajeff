@@ -52,5 +52,7 @@ class MainCoordinator {
         orderManager.addOrder(order: order)
     }
     
-    
+    func confirmOrders() {
+        orderManager.purchaseAllOrders()
+    }
 }

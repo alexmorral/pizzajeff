@@ -35,8 +35,34 @@ class ConfirmationViewController: UIViewController, StoryboardInstantiable {
         ordersTableView.dataSource = self
     }
     
+    func showMovieUpsell() {
+        Alerts.showMovieUpsell(in: self) {
+            self.confirmOrders()
+        } rightAction: {
+            self.addMovieToOrders()
+        }
+        CSatManager.shared.isMovieUpsellShown = true
+    }
+    
+    func addMovieToOrders() {
+        let order = Order(name: "Movie", details: "Avengers Endgame", quantity: 1, price: 3.5)
+        coordinator?.addOrderToCart(order: order)
+        orders.append(order)
+        ordersTableView.reloadData()
+    }
+    
     @IBAction func confirmTapped(_ sender: Any) {
-        
+        if CSatManager.shared.shouldShowMovieUpsellPopup() {
+            showMovieUpsell()
+        } else {
+            confirmOrders()
+        }
+    }
+    
+    func confirmOrders() {
+        Alerts.displayMessage(message: "Your order has been confirmed. Thank you for your purchase.")
+        coordinator?.confirmOrders()
+        self.navigationController?.dismiss(animated: true, completion: nil)
     }
 }
 
