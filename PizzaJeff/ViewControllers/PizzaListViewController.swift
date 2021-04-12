@@ -12,14 +12,13 @@ class PizzaListViewController: UIViewController, StoryboardInstantiable {
     weak var coordinator: MainCoordinator?
     @IBOutlet weak var pizzasCollectionView: UICollectionView!
     
-    var pizzaList: Pizzas?
+    var viewModel = PizzaListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Pizza Jeff"
         configureNavigationBar()
         configureCollectionView()
-        getPizzasData()
     }
     
     func configureNavigationBar() {
@@ -61,31 +60,17 @@ class PizzaListViewController: UIViewController, StoryboardInstantiable {
         pizzasCollectionView.collectionViewLayout = flowLayout
     }
     
-    func getPizzasData() {
-        DataManager.getPizzaList { (pizzas) in
-            self.pizzaList = pizzas
-            DispatchQueue.main.async { [weak self] in
-                self?.pizzasCollectionView.reloadData()
-            }
-        } onError: { (error) in
-            DispatchQueue.main.async { [weak self] in
-                guard let self = self else { return }
-                Alerts.showErrorAlert(vcToPresent: self, error: error)
-            }
-        }
-    }
-    
 }
 
 extension PizzaListViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return pizzaList?.count ?? 0
+        return viewModel.pizzas?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PizzaListCollectionViewCell.identifier, for: indexPath) as? PizzaListCollectionViewCell else { return UICollectionViewCell() }
         
-        guard let pizzaList = pizzaList else { return UICollectionViewCell() }
+        guard let pizzaList = viewModel.pizzas else { return UICollectionViewCell() }
         let pizza = pizzaList[indexPath.row]
         cell.setup(pizza: pizza)
         cell.delegate = self
@@ -93,7 +78,7 @@ extension PizzaListViewController: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let pizzaList = pizzaList else { return }
+        guard let pizzaList = viewModel.pizzas else { return }
         let pizza = pizzaList[indexPath.row]
         coordinator?.showPizzaDetail(pizza: pizza)
     }

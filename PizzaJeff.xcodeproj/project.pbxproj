@@ -11,6 +11,11 @@
 		8B18922125DABD2700B1C61D /* UpsellPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18922025DABD2700B1C61D /* UpsellPopupViewController.swift */; };
 		8B18922B25DAC65100B1C61D /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18922A25DAC65100B1C61D /* ActionButton.swift */; };
 		8B18922E25DACC3900B1C61D /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18922D25DACC3900B1C61D /* TypeAlias.swift */; };
+		8B315E082624C7CE009E66F8 /* PizzaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B315E072624C7CE009E66F8 /* PizzaListViewModel.swift */; };
+		8B315E0B2624C9C7009E66F8 /* PizzaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B315E0A2624C9C7009E66F8 /* PizzaRepository.swift */; };
+		8B315E0E2624CAB7009E66F8 /* PizzaDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B315E0D2624CAB7009E66F8 /* PizzaDataSource.swift */; };
+		8B315E112624CAE0009E66F8 /* PizzaLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B315E102624CAE0009E66F8 /* PizzaLocalDataSource.swift */; };
+		8B315E142624CB0F009E66F8 /* PizzaRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B315E132624CB0F009E66F8 /* PizzaRemoteDataSource.swift */; };
 		8B7B644025D68E4B00A442F4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B643F25D68E4B00A442F4 /* MainCoordinator.swift */; };
 		8B7B644825D68EF900A442F4 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B644725D68EF900A442F4 /* UIViewController+Extensions.swift */; };
 		8B7B644C25D68FCF00A442F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7B644B25D68FCF00A442F4 /* Main.storyboard */; };
@@ -19,7 +24,6 @@
 		8B7B645725D695B200A442F4 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B645625D695B200A442F4 /* Alerts.swift */; };
 		8B7B645B25D6988000A442F4 /* PizzaListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B645A25D6988000A442F4 /* PizzaListCollectionViewCell.swift */; };
 		8B7B646025D6993300A442F4 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B645F25D6993300A442F4 /* Pizza.swift */; };
-		8B7B646A25D69B6200A442F4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B646925D69B6200A442F4 /* DataManager.swift */; };
 		8B7B646D25D69C1800A442F4 /* PizzaList.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B7B646C25D69C1800A442F4 /* PizzaList.json */; };
 		8B7B647025D6AA0000A442F4 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B646F25D6AA0000A442F4 /* Double+Extensions.swift */; };
 		8B7B647325D6AE7200A442F4 /* CSatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B647225D6AE7200A442F4 /* CSatManager.swift */; };
@@ -41,6 +45,11 @@
 		8B18922025DABD2700B1C61D /* UpsellPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpsellPopupViewController.swift; sourceTree = "<group>"; };
 		8B18922A25DAC65100B1C61D /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		8B18922D25DACC3900B1C61D /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
+		8B315E072624C7CE009E66F8 /* PizzaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListViewModel.swift; sourceTree = "<group>"; };
+		8B315E0A2624C9C7009E66F8 /* PizzaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaRepository.swift; sourceTree = "<group>"; };
+		8B315E0D2624CAB7009E66F8 /* PizzaDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaDataSource.swift; sourceTree = "<group>"; };
+		8B315E102624CAE0009E66F8 /* PizzaLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaLocalDataSource.swift; sourceTree = "<group>"; };
+		8B315E132624CB0F009E66F8 /* PizzaRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaRemoteDataSource.swift; sourceTree = "<group>"; };
 		8B7B643F25D68E4B00A442F4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		8B7B644725D68EF900A442F4 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		8B7B644B25D68FCF00A442F4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -49,7 +58,6 @@
 		8B7B645625D695B200A442F4 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		8B7B645A25D6988000A442F4 /* PizzaListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaListCollectionViewCell.swift; sourceTree = "<group>"; };
 		8B7B645F25D6993300A442F4 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
-		8B7B646925D69B6200A442F4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		8B7B646C25D69C1800A442F4 /* PizzaList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PizzaList.json; sourceTree = "<group>"; };
 		8B7B646F25D6AA0000A442F4 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		8B7B647225D6AE7200A442F4 /* CSatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSatManager.swift; sourceTree = "<group>"; };
@@ -87,6 +95,40 @@
 				8B18922A25DAC65100B1C61D /* ActionButton.swift */,
 			);
 			path = "Library Components";
+			sourceTree = "<group>";
+		};
+		8B315E162624CB39009E66F8 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				8B315E102624CAE0009E66F8 /* PizzaLocalDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		8B315E182624CB3E009E66F8 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				8B315E132624CB0F009E66F8 /* PizzaRemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		8B315E1A2624CB46009E66F8 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8B315E0D2624CAB7009E66F8 /* PizzaDataSource.swift */,
+				8B315E162624CB39009E66F8 /* Local */,
+				8B315E182624CB3E009E66F8 /* Remote */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		8B315E1C2624CB56009E66F8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8B315E0A2624C9C7009E66F8 /* PizzaRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		8B7B644225D68EAE00A442F4 /* ViewControllers */ = {
@@ -151,11 +193,18 @@
 		8B7B646825D69B5200A442F4 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				8B7B646925D69B6200A442F4 /* DataManager.swift */,
 				8B7B647225D6AE7200A442F4 /* CSatManager.swift */,
 				8B7B648425D733B800A442F4 /* OrderManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		8BA3F0DF2624CCC900284D04 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B315E072624C7CE009E66F8 /* PizzaListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		8BED0BF325D14B720078A7CB = {
@@ -183,8 +232,11 @@
 				8B7B644425D68EB600A442F4 /* Coordinator */,
 				8B7B644225D68EAE00A442F4 /* ViewControllers */,
 				8B7B645925D6986600A442F4 /* Components */,
+				8BA3F0DF2624CCC900284D04 /* ViewModels */,
 				8B7B646225D6993600A442F4 /* Models */,
 				8B7B646825D69B5200A442F4 /* Managers */,
+				8B315E1C2624CB56009E66F8 /* Repository */,
+				8B315E1A2624CB46009E66F8 /* DataSource */,
 				8B7B644625D68EC300A442F4 /* Extensions */,
 				8B7B644E25D6918100A442F4 /* Utils */,
 				8BED0C0825D14B730078A7CB /* Assets.xcassets */,
@@ -328,13 +380,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B7B644825D68EF900A442F4 /* UIViewController+Extensions.swift in Sources */,
-				8B7B646A25D69B6200A442F4 /* DataManager.swift in Sources */,
+				8B315E142624CB0F009E66F8 /* PizzaRemoteDataSource.swift in Sources */,
 				8B7B647F25D7322800A442F4 /* OrderTableViewCell.swift in Sources */,
 				8B7B647325D6AE7200A442F4 /* CSatManager.swift in Sources */,
 				8B7B645425D691D400A442F4 /* PizzaListViewController.swift in Sources */,
 				8B7B646025D6993300A442F4 /* Pizza.swift in Sources */,
 				8B7B648525D733B800A442F4 /* OrderManager.swift in Sources */,
+				8B315E112624CAE0009E66F8 /* PizzaLocalDataSource.swift in Sources */,
 				8B7B648225D7330100A442F4 /* Order.swift in Sources */,
+				8B315E0B2624C9C7009E66F8 /* PizzaRepository.swift in Sources */,
 				8B18922125DABD2700B1C61D /* UpsellPopupViewController.swift in Sources */,
 				8B18922E25DACC3900B1C61D /* TypeAlias.swift in Sources */,
 				8BED0C0425D14B720078A7CB /* LoginViewController.swift in Sources */,
@@ -343,9 +397,11 @@
 				8B7B644025D68E4B00A442F4 /* MainCoordinator.swift in Sources */,
 				8B7B647C25D72B9600A442F4 /* ConfirmationViewController.swift in Sources */,
 				8B7B645725D695B200A442F4 /* Alerts.swift in Sources */,
+				8B315E0E2624CAB7009E66F8 /* PizzaDataSource.swift in Sources */,
 				8B7B647625D6B06900A442F4 /* HardCodedOrdering.swift in Sources */,
 				8BED0C0025D14B720078A7CB /* AppDelegate.swift in Sources */,
 				8B7B647025D6AA0000A442F4 /* Double+Extensions.swift in Sources */,
+				8B315E082624C7CE009E66F8 /* PizzaListViewModel.swift in Sources */,
 				8B7B645B25D6988000A442F4 /* PizzaListCollectionViewCell.swift in Sources */,
 				8B18922B25DAC65100B1C61D /* ActionButton.swift in Sources */,
 			);
